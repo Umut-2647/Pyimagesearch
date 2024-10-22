@@ -51,5 +51,6 @@ for path in range(1,len(path_list)):
 
             print("Toplam Puan: ", puan)
 
+    cv2.putText(path_list[path], f"Puan: {puan}", (10, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2)
     cv2.imshow("Image", path_list[path])
     cv2.waitKey(0)  
